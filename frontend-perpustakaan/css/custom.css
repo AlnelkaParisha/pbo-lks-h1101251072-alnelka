@@ -1,0 +1,33 @@
+
+/* Styling navigasi */
+.menu-link {
+    display: inline-block;
+    padding: 16px 4px;
+    color: #4b5563;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.menu-link:hover {
+    color: #1d4ed8;
+    border-bottom-color: #2563eb;
+}
+
+/* Toast notification */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    color: white;
+    background-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.toast.hidden {
+    display: none;
+}

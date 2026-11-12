@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perpustakaan</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-700 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-5">
+            <h1 class="text-2xl font-bold">
+                Perpustakaan
+            </h1>
+
+            <p class="text-blue-100 text-sm mt-1">
+                Sistem Informasi Perpustakaan
+            </p>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex gap-6">
+            <a href="#dashboard" class="menu-link">
+                Dashboard
+            </a>
+
+            <a href="#books" class="menu-link">
+                Buku
+            </a>
+
+            <a href="#categories" class="menu-link">
+                Kategori
+            </a>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div id="app">
+            <div class="text-center py-16">
+                <p class="text-gray-600 text-lg">
+                    Memuat aplikasi...
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- JavaScript Konfigurasi dan API -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/utils.js"></script>
+
+    <!-- JavaScript Halaman -->
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/books.js"></script>
+    <script src="js/pages/categories.js"></script>
+
+    <!-- JavaScript Router -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
